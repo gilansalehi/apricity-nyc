@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      active: 'home',
+      active: 'Home',
     };
   }
 
@@ -35,8 +35,9 @@ class App extends Component {
     const { active } = this.state;
 
     const tabs = ['Home', 'News', 'Photos', 'Listen', 'Connect'].map((t, i) => {
+      const style = { textDecoration: t === active ? 'underline' : 'none' };
       return (
-        <li key={i} className='nav-li hover-hands' onClick={e => this.setTab(t)}>
+        <li key={i} style={style} className='nav-li hover-hands' onClick={e => this.setTab(t)}>
           { t }
         </li>
       )

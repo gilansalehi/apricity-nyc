@@ -2,15 +2,25 @@ import React, {Component} from 'react';
 
 export default class Home extends Component {
   render() {
+    const shuffle = () => .5 - Math.random();
+    const list = [
+      'Gilan Salehi (vocals, guitar)',
+      'Michael Clemente (lead guitar, vocals)',
+      'Kathie Chang (keys, vocals)',
+      'Pablo Ortega (drums)',
+      'Ting Guo (bass, vocals)',
+    ].sort(shuffle).map((k, i) => <li key={i}>{ k }</li>);
+
+    const adjective = ['salubrity', 'redolence', 'galimaufry', 'cromulence'].sort(shuffle)[0];
+
     return (
       <div>
-        <h1>About Apricity</h1><br />
-        <ul>
-          <li>Gilan Salehi (vocals, guitar)</li>
-          <li>Michael Clemente (lead guitar, vocals)</li>
-          <li>Kathie Chang (keys, vocals)</li>
-          <li>Pablo Ortega (drums)</li>
-          <li>Ting Guo (bass, vocals)</li>
+        <h2 style={{fontFamily:'"Cinzel Decorative", cursive', textDecoration: 'underline'}}>
+          About Apricity
+        </h2>
+        <p>In order of increasing {adjective}, we are:</p>
+        <ul style={{fontWeight:'bold'}}>
+          { list }
         </ul>
         <p>
           We have been a band for nearly 10 minutes, having released 0 criticially acclaimed

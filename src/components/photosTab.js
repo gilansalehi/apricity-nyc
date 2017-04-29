@@ -4,7 +4,7 @@ export default class Photos extends Component {
   render() {
     return (
       <div>
-        Photo Coming soon!
+        Photos Coming soon!
       </div>
     );
   }
