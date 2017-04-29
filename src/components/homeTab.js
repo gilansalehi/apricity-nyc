@@ -11,7 +11,8 @@ export default class Home extends Component {
       'Ting Guo (bass, vocals)',
     ].sort(shuffle).map((k, i) => <li key={i}>{ k }</li>);
 
-    const adjective = ['salubrity', 'redolence', 'galimaufry', 'cromulence'].sort(shuffle)[0];
+    const adjective = ['salubrity', 'redolence', 'galimaufry', 'cromulence', 'precociousness'].sort(shuffle)[0];
+    const bandAge = Math.floor((Date.now() - 1493407054585)/60000);
 
     return (
       <div>
@@ -23,7 +24,7 @@ export default class Home extends Component {
           { list }
         </ul>
         <p>
-          We have been a band for nearly 10 minutes, having released 0 criticially acclaimed
+          We have been a band for nearly {bandAge} minutes, having released 0 criticially acclaimed
           chart-topping albums.  Follow us on Twitter, Instagram, and Facebook.
         </p>
       </div>
