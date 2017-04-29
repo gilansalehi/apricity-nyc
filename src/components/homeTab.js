@@ -10,8 +10,8 @@ export default class Home extends Component {
       'Pablo Ortega (drums)',
       'Ting Guo (bass, vocals)',
     ].sort(shuffle).map((k, i) => <li key={i}>{ k }</li>);
-
-    const adjective = ['salubrity', 'redolence', 'galimaufry', 'cromulence', 'precociousness'].sort(shuffle)[0];
+    const adjectives = ['salubrity', 'redolence', 'galimaufry', 'cromulence', 'precociousness'];
+    const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
     const bandAge = Math.floor((Date.now() - 1493407054585)/60000);
 
     return (
