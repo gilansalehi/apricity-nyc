@@ -30,6 +30,10 @@ ul, li {
   list-style: none;
 }
 
+h2 {
+  margin: 0 0 10px 0;
+}
+
 .header {
   display: block;
   height: 300px;
@@ -61,7 +65,7 @@ ul, li {
   max-width: 800px;
   min-height: 400px;
   margin: auto;
-  padding: 50px;
+  padding: 20px 50px;
 }
 
 /*.nav-li:after {
