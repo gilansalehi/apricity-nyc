@@ -4,7 +4,9 @@ export default class Tab extends Component {
   render () {
     return (
       <div className="content-tab">
-        { this.props.children }
+        <div className="content-tab-inner">
+          { this.props.children }
+        </div>
       </div>
     )
   }
