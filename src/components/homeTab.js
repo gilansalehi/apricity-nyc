@@ -20,3 +20,5 @@ export default class Home extends Component {
     );
   }
 }
+
+const imgsrc = './../../public/apricityPhotos/bandPhoto.jpg';

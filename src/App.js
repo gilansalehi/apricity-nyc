@@ -4,6 +4,8 @@ import Tab from './components/tab';
 import Home from './components/homeTab';
 import News from './components/newsTab';
 import Photos from './components/photosTab';
+import Listen from './components/listenTab';
+import Connect from './components/connectTab';
 import './App.css';
 
 class App extends Component {
@@ -24,6 +26,8 @@ class App extends Component {
       case 'home': return (<Home />);
       case 'news': return (<News />);
       case 'photos': return (<Photos />);
+      case 'listen': return (<Listen />);
+      case 'connect': return (<Connect />)
     };
   }
 
