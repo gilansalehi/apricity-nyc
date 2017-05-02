@@ -12,6 +12,9 @@ export default class News extends Component {
           <p>Hey Friends!</p>
           <p>
             Apricity is performing at Smash Studios at 9pm on Saturday, May 13th.
+          </p
+          ><p>Pick up tickets on 
+            <a href='https://www.eventbrite.com/e/a-night-with-apricity-music-drinks-and-mingling-tickets-34154659506'>EventBrite</a>!
           </p>
         </div>
       </div>
