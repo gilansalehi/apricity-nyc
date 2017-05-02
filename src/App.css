@@ -68,6 +68,14 @@ h2 {
   padding: 20px 50px;
 }
 
+a {
+  color: white;
+}
+
+a:visited {
+  color: lightgray;
+}
+
 /*.nav-li:after {
   content: '	•';
 }
