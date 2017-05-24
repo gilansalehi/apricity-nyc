@@ -13,9 +13,15 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+@keyframes hide-header {
+  from { height: 300px; }
+  to { height: 0px; }
 }
 
 .body {
@@ -23,6 +29,15 @@
   background-size: cover;
 }
 
+/*.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: url(../public/ApricityLogo.jpg);
+  z-index: -10;
+}*/
 
 ul, li {
   margin: 0;
@@ -37,8 +52,7 @@ h2 {
 .header {
   display: block;
   height: 300px;
-  /*background: url(../public/apricityPhotos/ApricityLogo.png);
-  background-size: 300px 100%;*/
+  animation-name: hide-header;
 }
 
 .nav-bar {
@@ -68,6 +82,12 @@ h2 {
   padding: 20px 50px;
 }
 
+.center-children {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 a {
   color: white;
 }
@@ -76,16 +96,99 @@ a:visited {
   color: lightgray;
 }
 
-/*.nav-li:after {
-  content: '	•';
-}
-.nav-li:before {
-  content: '• ';
-}*/
 .photo {
   display: block;
   height: 100%;
   width: 500px;
+}
+
+.photo-frame {
+  display: inline-block;
+  position: relative;
+  margin: 5px 5px 0 5px;
+  width: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.photo-frame > div {
+  margin: 0;
+}
+
+.fadeout:after {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 4em;
+  z-index: 100;
+  background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -moz-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -o-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+  background-image: -ms-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.fadeout:after:hover {
+  display: none;
+}
+
+.scrapbook {
+
+}
+
+.photo-nav {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  transform: translateY(-60%);
+  width: 150px;
+  height: 250px;
+  font-size: 68px;
+  justify-content: center;
+  margin: auto auto;
+  text-shadow: 0 0 10px white;
+}
+
+.photo-nav-arrow {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous-photo {
+  left: 0;
+}
+
+.previous-photo:hover .photo-nav-arrow {
+  display: flex;
+}
+
+.next-photo {
+  right: 0;
+}
+
+.next-photo:hover .photo-nav-arrow {
+  display: flex;
+}
+
+iframe {
+  margin: 0;
 }
 
 .logo {

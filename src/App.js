@@ -47,13 +47,13 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="header">.</div>
+        <div className="header"></div>
         <div className="nav-bar">
           <ul className="nav-ul">
             { tabs }
           </ul>
         </div>
-        <div className="content">
+        <div className="content clearfix">
           { activeContent }
         </div>
       </div>
