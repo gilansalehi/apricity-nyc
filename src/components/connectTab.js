@@ -13,6 +13,7 @@ export default class Connect extends Component {
           <li><a href='https://www.twitter.com/apricitynyc'>Twitter</a></li>
           <li><a href='https://www.instagram.com/apricitynyc/'>Instagram</a></li>
           <li><a href='https://www.facebook.com/apricitynyc/'>Facebook</a></li>
+          <li><a href='https://www.reverbnation.com/apricitynyc'>Reverb Nation</a></li>
         </ul>
       </div>
     )
