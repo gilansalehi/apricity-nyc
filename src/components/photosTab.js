@@ -9,16 +9,16 @@ export default class Photos extends Component {
     this.state = {
       index: 999,
       urls: [
-        "https://www.instagram.com/p/BUbjBpfjSiz/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BUExwHWj0du/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BUFDfzRjVDd/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BThbt6jDCgA/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BSEjUrzD1Cy/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BUFY7PLjrMF/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BPtpO4yh00s/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BTbcHwuj8gj/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BPtunuuhbh4/?taken-by=apricity_music",
-        "https://www.instagram.com/p/BPl2FD4BGxl/?taken-by=apricity_music",
+        "https://www.instagram.com/p/BUbjBpfjSiz/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BUExwHWj0du/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BUFDfzRjVDd/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BThbt6jDCgA/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BSEjUrzD1Cy/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BUFY7PLjrMF/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BPtpO4yh00s/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BTbcHwuj8gj/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BPtunuuhbh4/?taken-by=apricitynyc",
+        "https://www.instagram.com/p/BPl2FD4BGxl/?taken-by=apricitynyc",
       ],
     };
 
