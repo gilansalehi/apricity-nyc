@@ -8,7 +8,7 @@ export default class Connect extends Component {
           Social/Media
         </h2>
         <p>Be sure to like and follow!</p>
-        <ul style={{color:'white'}}>
+        <ul className="connect-links" style={{color:'white'}}>
           <li><a href='https://www.youtube.com/channel/UC4e2VE5E5f7HSoZ1DrZ68cA'>YouTube</a></li>
           <li><a href='https://www.twitter.com/apricitynyc'>Twitter</a></li>
           <li><a href='https://www.instagram.com/apricitynyc/'>Instagram</a></li>
