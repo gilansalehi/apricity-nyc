@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Listen extends Component {
   render() {
     return (
-      <div>
+      <div className="embedded-content">
         <h2 style={{fontFamily:'"Cinzel Decorative", cursive', textDecoration: 'underline'}}>
           Music
         </h2>

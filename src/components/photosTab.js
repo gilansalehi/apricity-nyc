@@ -35,7 +35,7 @@ export default class Photos extends Component {
     const { urls, index } = this.state;
     const url = urls[index % urls.length];
     return (
-      <div>
+      <div className="embedded-content">
         <div className='scrapbook'>
           <span className='photo-frame'>
             <span className='photo-nav previous-photo hover-hands' onClick={ this.decrement }>
