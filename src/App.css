@@ -209,3 +209,9 @@ iframe {
   height: 350px;
   width: 350px;
 }
+
+.twitter-timeline-embed {
+  max-width: 100%;
+  width: 400px;
+  margin: auto;
+}
