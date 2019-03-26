@@ -27,17 +27,8 @@
 .body {
   background: url(../public/ApricityLogo.jpg);
   background-size: cover;
+  background-position-x: 50%;
 }
-
-/*.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  background: url(../public/ApricityLogo.jpg);
-  z-index: -10;
-}*/
 
 ul, li {
   margin: 0;
@@ -105,8 +96,6 @@ a:visited {
 .photo-frame {
   display: inline-block;
   position: relative;
-  margin: 5px 5px 0 5px;
-  width: 500px;
   overflow: hidden;
   white-space: nowrap;
 }
@@ -214,4 +203,12 @@ iframe {
   max-width: 100%;
   width: 400px;
   margin: auto;
+}
+
+.turn-page {
+  display: flex;
+  justify-content: space-around;
+}
+.turn-page span {
+  padding: .5em 1em;
 }
